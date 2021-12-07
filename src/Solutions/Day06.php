@@ -5,7 +5,7 @@ namespace AdventOfCode\Solutions;
 use AdventOfCode\Common\Solution\AbstractSolution;
 
 /**
- * Class Day01
+ * Class Day06
  *
  * @package AdventOfCode\Solutions
  * @author  Ruud Seberechts
