@@ -12,16 +12,16 @@ use AdventOfCode\Common\Solution\AbstractSolution;
  */
 class Day16 extends AbstractSolution
 {
-    protected array $versions = [];
-
-    const PACKAGE_TYPE_SUM = 0;
+    const PACKAGE_TYPE_SUM     = 0;
     const PACKAGE_TYPE_PRODUCT = 1;
-    const PACKAGE_TYPE_MIN = 2;
-    const PACKAGE_TYPE_MAX = 3;
+    const PACKAGE_TYPE_MIN     = 2;
+    const PACKAGE_TYPE_MAX     = 3;
     const PACKAGE_TYPE_LITERAL = 4;
     const PACKAGE_TYPE_GREATER = 5;
-    const PACKAGE_TYPE_LESS = 6;
-    const PACKAGE_TYPE_EQUAL = 7;
+    const PACKAGE_TYPE_LESS    = 6;
+    const PACKAGE_TYPE_EQUAL   = 7;
+
+    protected array $versions = [];
 
     protected function solvePart1(): string
     {
