@@ -26,11 +26,7 @@ class Day17 extends AbstractSolution
     protected function solvePart2(): string
     {
         $target = array_map(fn ($v) => explode('..', substr($v, 2)), explode(', ', substr($this->rawInput, 13)));
-        $yv = abs($target[1][0]) - 1;
-        $maxY = 0;
-        while ($yv > 0) {
-            $maxY += $yv--;
-        }
+        $maxY = abs($target[1][0]) - 1;
         $minY = $target[1][0];
         $maxX = $target[0][1];
         $minX = floor($target[0][0] / 10);
@@ -42,7 +38,6 @@ class Day17 extends AbstractSolution
             for ($yv = $minY; $yv <= $maxY; $yv++) {
                 if ($this->hit($target, $xv, $yv)) {
                     $hits++;
-                    echo "$xv, $yv\n";
                 }
             }
         }
